@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    File: index.html
+    Jason Downing
+    Contact: jason@downing.io
+    MIT Licensed - see http://opensource.org/licenses/MIT for details.
+    Anyone may freely use this code. Just don't sue me if it breaks stuff.
+    Created: June 19, 2017
+    Last Updated: February 21st, 2021
+
+    This code is originally from: https://github.com/JasonD94/jasond94.github.io
+    Which itself is based on
+    the Creative Start Bootstrap theme: https://startbootstrap.com/template-overviews/creative/
+
+    This webpage is an album of epic Mountain Biking photos that I have taken in the last few years.
+    The photos will be pulled in from a Google Photos album.
+  -->
+
+  <!-- Custom Title Bar -->
+  <title>Title</title>
+
+	<!-- 2/20/2021: Updated to the latest Start Bootstrap code, so now pulling these in like they do
+								One exception: using my font awesome, was missing font awesome icons with the Start Bootstrap one...
+	--->
+  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
+	<!-- Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+	<!-- Third party plugin CSS-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+
+  <!-- Theme CSS -->
+  <link href="css/creative.css" rel="stylesheet">
+
+  <!-- Index CSS -->
+  <link href="css/index.css" rel="stylesheet">
+
+  <!-- Custom favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Google Analytics Tracking Tag. Track how people access my site and such. -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-68657454-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+
+      <!-- Updated with latest Creative -->
+      <a class="navbar-brand page-scroll" href="/">Krishnanunni C G</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" 
+              data-toggle="collapse" data-target="#navbarResponsive" 
+              aria-controls="navbarResponsive" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#travel">Travel</a>
+          </li>
+					<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#read">Reading</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!--  Intro Section  -->
+  <header class="masthead text-center text-black d-flex">
+    <div class="container my-auto header-content-pos">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+						<strong>Title</strong>
+					</h1>
+					<hr class="divider my-4" />
+				</div>
+				<div class="col-lg-8 mx-auto">
+					<p class="text-black font-weight-bold">A collection of Things.</p>
+					<a href="#travel" class="btn btn-primary btn-xl js-scroll-trigger">View the Photos</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mountain Biking Photos will go here -->
+  <section class="min-padding bg-primary">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading" id="travel"> Some Travel Photos</h2>
+          <hr class="divider light my-4" />
+        </div>
+      </div>
+
+      <div class="row">
+
+        <!-- Photo Album to go here
+
+         Using nanogalley2: https://github.com/nanostudio-org/nanogallery2
+         http://nanogallery2.nanostudio.org/index.html
+
+         js/load-images.js populates this automagically
+				 (should do this in the Skiing album too, hmm)
+
+         -->
+        <div class="col-lg-12 text-center">
+          <div id="my_nanogallery2" data-nanogallery2 = '{
+            <!-- ### gallery settings ### -->
+              "thumbnailHeight":  150,
+              "thumbnailWidth":   150,
+              "itemsBaseURL":     "https://nanogallery2.nanostudio.org/samples/"
+            }'>
+              
+
+                      
+                  <!-- gallery content -->
+                  <a href = "img/album/kudr.jpg"   data-ngThumb = "img/album/kudr.jpg" > Kudremukh, Karnataka, India </a>
+                  <a href = "img/album/kudr.jpg"   data-ngThumb = "img/album/kudr.jpg" > Kudremukh, Karnataka, India</a>
+                  <a href = "img/album/kudr.jpg"   data-ngThumb = "img/album/kudr.jpg" > Kudremukh, Karnataka, India </a>
+              </div>
+      </div>
+    </div>
+    
+  <!--  THIS IS THE FOOTER - displays a copyright notice and
+        that Bootstrap powers this web page.
+        
+        6/16/2018: Added new line for the Source on Github... part, with margin bottom
+                   set to 1 (awesome new bootstrap 4 mb-1 class)-->
+  <div class="container">
+    <p class="text-center text-muted text-small mb-1">
+      Krishnanunni C G &copy; 2016 - <span id="copyright-year"></span>. All rights reserved.
+      Powered by <a href="http://www.getbootstrap.com/" class="text-blue">Bootstrap</a>.
+    </p>
+    <p class="text-center text-muted text-small">
+      Source on <a href="https://github.com/JasonD94/Mountain-Biking" class="text-blue">GitHub</a>.
+      Theme based on the
+      <a href="http://startbootstrap.com/template-overviews/creative/" class="text-blue">Creative Bootstrap Theme</a>
+      by <a href="http://startbootstrap.com/" class="text-blue">Start Bootstrap</a>.
+    </p>
+		<br/>
+  </div>
+
+  <!-- 2/20/2021: Updated with the latest Start Bootstrap code, so following what they did.
+							  Exception: the slim jquery seems to cause console errors. The full jquery gets rid of that,
+								and it seems like the scrolling works too. Weird.
+       https://github.com/BlackrockDigital/startbootstrap-creative  -->
+       
+ <!-- Bootstrap core JS-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Third party plugin JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<!-- Core theme JS-->
+  <script src="js/creative.js"></script>
+  
+  <!-- nanogallery2 -->
+  <link href="css/nanogallery2.min.css" rel="stylesheet">
+  <script src="js/jquery.nanogallery2.min.js"></script>
+  
+  <!-- Dynamically loading all images in a directory into the nanogallery2 -->
+  <script src="js/load-images.js"></script>
+
+	<!-- Automagically update the copyright year - why did I ever hardcode that? RIP lazy 2015 - 2020 me. -->
+	<script>
+		document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+	</script>
+
+</body>
+</html>
