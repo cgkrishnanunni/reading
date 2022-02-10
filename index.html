@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!--
@@ -10,24 +10,20 @@
     Contact: jason@downing.io
     MIT Licensed - see http://opensource.org/licenses/MIT for details.
     Anyone may freely use this code. Just don't sue me if it breaks stuff.
-    Created: June 19, 2017
-    Last Updated: February 21st, 2021
+    Created: September 3rd, 2015.
+    Last Updated: November 13th, 2021.
 
-    This code is originally from: https://github.com/JasonD94/jasond94.github.io
-    Which itself is based on
-    the Creative Start Bootstrap theme: https://startbootstrap.com/template-overviews/creative/
-
-    This webpage is an album of epic Mountain Biking photos that I have taken in the last few years.
-    The photos will be pulled in from a Google Photos album.
+    Jason Downing's personal website. This site has information about him,
+    details about his education, skills, and links to his GitHub and LinkedIn
+    Profiles. This site is hosted on GitHub Pages.
   -->
 
   <!-- Custom Title Bar -->
-  <title>Title</title>
+  <title>Krishnanunni C G</title>
 
-	<!-- 2/20/2021: Updated to the latest Start Bootstrap code, so now pulling these in like they do
-								One exception: using my font awesome, was missing font awesome icons with the Start Bootstrap one...
+	<!-- 11/13/2021: adding latest font awesome
 	--->
-  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
+  <script src="https://kit.fontawesome.com/a6c9a7a3a0.js" crossorigin="anonymous"></script>
 	<!-- Google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
@@ -43,7 +39,8 @@
   <!-- Custom favicon -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-  <!-- Google Analytics Tracking Tag. Track how people access my site and such. -->
+  <!-- Google Analytics Tracking Tag. Track how people access my site and such.
+       (assuming they don't block ads or whatever from Google) -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,139 +50,83 @@
     ga('send', 'pageview');
   </script>
 
-</head>
 
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-
-      <!-- Updated with latest Creative -->
-      <a class="navbar-brand page-scroll" href="/">Krishnanunni C G</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" 
-              data-toggle="collapse" data-target="#navbarResponsive" 
-              aria-controls="navbarResponsive" aria-expanded="false" 
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#travel">Travel</a>
-          </li>
-					<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#read">Reading</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-
-  <!--  Intro Section  -->
-  <header class="masthead text-center text-black d-flex">
-    <div class="container my-auto header-content-pos">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h1 class="text-uppercase">
-						<strong>Title</strong>
-					</h1>
-					<hr class="divider my-4" />
-				</div>
-				<div class="col-lg-8 mx-auto">
-					<p class="text-black font-weight-bold">A collection of Things.</p>
-					<a href="#travel" class="btn btn-primary btn-xl js-scroll-trigger">View the Photos</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Mountain Biking Photos will go here -->
-  <section class="min-padding bg-primary">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading" id="travel"> Some Travel Photos</h2>
-          <hr class="divider light my-4" />
-        </div>
-      </div>
-
-      <div class="row">
-
-        <!-- Photo Album to go here
-
-         Using nanogalley2: https://github.com/nanostudio-org/nanogallery2
-         http://nanogallery2.nanostudio.org/index.html
-
-         js/load-images.js populates this automagically
-				 (should do this in the Skiing album too, hmm)
-
-         -->
-        <div class="col-lg-12 text-center">
-          <div id="my_nanogallery2" data-nanogallery2 = '{
-            <!-- ### gallery settings ### -->
-              "thumbnailHeight":  150,
-              "thumbnailWidth":   150,
-              "itemsBaseURL":     "https://nanogallery2.nanostudio.org/samples/"
-            }'>
-              
-
-                      
-                  <!-- gallery content -->
-                  <a href = "img/album/kudr.jpg"   data-ngThumb = "img/album/kudr.jpg" > Kudremukh, Karnataka, India </a>
-                  <a href = "img/album/kudr.jpg"   data-ngThumb = "img/album/kudr.jpg" > Kudremukh, Karnataka, India</a>
-                  <a href = "img/album/kudr.jpg"   data-ngThumb = "img/album/kudr.jpg" > Kudremukh, Karnataka, India </a>
-              </div>
-      </div>
-    </div>
-    
-  <!--  THIS IS THE FOOTER - displays a copyright notice and
-        that Bootstrap powers this web page.
+  
         
-        6/16/2018: Added new line for the Source on Github... part, with margin bottom
-                   set to 1 (awesome new bootstrap 4 mb-1 class)-->
-  <div class="container">
-    <p class="text-center text-muted text-small mb-1">
-      Krishnanunni C G &copy; 2016 - <span id="copyright-year"></span>. All rights reserved.
-      Powered by <a href="http://www.getbootstrap.com/" class="text-blue">Bootstrap</a>.
-    </p>
-    <p class="text-center text-muted text-small">
-      Source on <a href="https://github.com/JasonD94/Mountain-Biking" class="text-blue">GitHub</a>.
-      Theme based on the
-      <a href="http://startbootstrap.com/template-overviews/creative/" class="text-blue">Creative Bootstrap Theme</a>
-      by <a href="http://startbootstrap.com/" class="text-blue">Start Bootstrap</a>.
-    </p>
-		<br/>
-  </div>
+  </section>
 
-  <!-- 2/20/2021: Updated with the latest Start Bootstrap code, so following what they did.
-							  Exception: the slim jquery seems to cause console errors. The full jquery gets rid of that,
-								and it seems like the scrolling works too. Weird.
-       https://github.com/BlackrockDigital/startbootstrap-creative  -->
+  <!-- Work Experience Section. -->
+  <section class="page-section">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading" id="work">Some Recent Reading</h2>
+          <i class="fas fa-4x fa-puzzle-piece text-primary sr-icons"></i>
+          <hr class="divider my-4" />
+  
+				   <!-- Some fun stuff, leave the boring code for last. -->
+           <section class="page-section bg-primary">
+            <div class="container-fluid">
+              <div class="row images-vcenter">
+              
+               
+          
+          
+              </div>
+              <div class="col-lg-12 col-sm-12 text-center">
+                <h3 class="mt-4 mb-4">When Einstein Met Tagore</h3>
+                <p class="text-faded">On July 14, 1930, Albert Einstein welcomed into his home in Berlin the Indian poet, and philosopher Rabindranath Tagore — the first non-European to win the Nobel Prize. The two proceeded to have one of the most  intellectually riveting conversations in history, exploring the age-old friction between science and religion. They brainstorm on the concept of absolute truth, the nature of reality. Link to the talk is given below: <span class="RlRed"></span></p>
+                <p><a href="https://mast.queensu.ca/~murty/einstein_tagore.pdf" class="text-dark">ON THE NATURE OF REALITY</a></p>
+                
+                <img class="img-responsive" width="20%" height="auto" src="img/Einstein_Tagore.jpg" alt=""><br/>
+               
+               
+              </div>
+          
+            </div>
+<section class="page-section bg-green">
+ 
+  
        
- <!-- Bootstrap core JS-->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-	<!-- Third party plugin JS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-	<!-- Core theme JS-->
-  <script src="js/creative.js"></script>
-  
-  <!-- nanogallery2 -->
-  <link href="css/nanogallery2.min.css" rel="stylesheet">
-  <script src="js/jquery.nanogallery2.min.js"></script>
-  
-  <!-- Dynamically loading all images in a directory into the nanogallery2 -->
-  <script src="js/load-images.js"></script>
+<!-- Some fun stuff, leave the boring code for last. -->
+</div>
+<div class="col-lg-12 col-sm-12 text-center">
+<h3 class="mt-4 mb-4"> A beautiful poem by Pablo Neruda</h3>
+<p class="text-faded">Pablo Neruda, was a Chilean poet-diplomat and politician who won the Nobel Prize for Literature in 1971. Here is a masterpiece that I recently read. The title of the poem is "You start Dying Slowly."<span class="RlRed"></span></p>
+<p class="text-faded">  
 
-	<!-- Automagically update the copyright year - why did I ever hardcode that? RIP lazy 2015 - 2020 me. -->
-	<script>
-		document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
-	</script>
+  You start dying slowly
 
+  if you do not travel,<br>
+  if you do not read,<br>
+  If you do not listen to the sounds of life,<br>
+  If you do not appreciate yourself.<br>
+  <br>
+  You start dying slowly<br>
+  When you kill your self-esteem;<br>
+  When you do not let others help you.<br>
+  <br>
+  You start dying slowly<br>
+  If you become a slave of your habits,<br>
+  Walking everyday on the same paths…<br>
+  If you do not change your routine,<br>
+  If you do not wear different colours<br>
+  Or you do not speak to those you don’t know.<br>
+  <br>
+  You start dying slowly<br>
+  If you avoid to feel passion<br>
+  And their turbulent emotions;<br>
+  Those which make your eyes glisten<br>
+  And your heart beat fast.<br>
+  <br>
+  You start dying slowly<br>
+  If you do not change your life when you are not satisfied with your job, or with your love,<br>
+  If you do not risk what is safe for the uncertain,<br>
+  If you do not go after a dream,<br>
+  If you do not allow yourself,<br>
+  At least once in your lifetime,<br>
+  To run away from sensible advice<span class="RlRed"></span></p>
+</div>
+  
 </body>
 </html>
